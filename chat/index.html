@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/0818f77e6e.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        padding:0;
+        margin:0;
+    }
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    width:100vw;
+    height:100vh;
+}
+    
+.div1 {
+    background-color:palevioletred;
+   grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+}
+
+.div2 {
+    grid-column: span 6 / span 6;
+    grid-row: span 5 / span 5;
+    grid-column-start: 4;
+    
+}
+
+.div3 {
+    background-color:palevioletred;
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 10;
+    
+}
+.flex-row{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: start;
+    padding:4px;
+    
+    
+}
+.flex-col{
+    display: flex;
+    flex-direction:row;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:wheat;
+    justify-content: center;
+    margin:10px;
+    gap:10px;
+    margin-left:30px;
+
+}
+.flex-col img{
+    width:18px;
+    
+}
+
+.ai{
+    margin-top:50px;
+}
+
+
+
+
+
+
+</style>
+<body>
+    
+<div class="parent">
+    <div class="div1 flex-row" >
+        <div class="flex-col ai">
+          
+            <h2>AI CHAT</h2>
+        </div>
+        <div class="flex-col">
+              <img src="icons/dashboard.png" alt="">
+            <h4>DashBoard</h4>
+        </div>
+        <div class="flex-col">
+            <img src="icons/message.png" alt="">
+            <h4>Messages</h4>
+        </div>
+        <div class="flex-col">
+            <img src="icons/groups.png" alt="">
+            <h4>Groups</h4>
+        </div>
+        <div class="flex-col">
+            <img src="icons/star.png" alt="">
+            <h4>Favourites</h4>
+        </div>
+        <div class="flex-col">
+            <img src="icons/calender.png" alt="">
+            <h4>Calendar</h4>
+        </div>
+        <div class="flex-col">
+            <img src="icons/files.png" alt="">
+            <h4>Files</h4>
+        </div>
+  
+    </div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    </div>
+    
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hrline {
+        position: relative;
+
+    }
+
+    form {
+        position: relative;
+        top: 90px;
+        left: 140px;
+    }
+
+    hr {
+        width: 300px;
+    }
+
+    .inp1 {
+        width: 330px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .btn1 {
+        width: 360px;
+        padding: 10px;
+        background-color: #B13BFF;
+    }
+
+    .remberme {
+        display: flex;
+
+    }
+
+    .btn2 {
+        width: 360px;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: aliceblue;
+    }
+
+    .rp {
+        position: relative;
+        left: 130px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .line {
+       margin: 10px 0px 0px 0px;
+        width: 360px;
+        height: 1px;
+        background-color: black;
+        border-color: black;
+    }
+</style>
+
+<body style="background-color:aliceblue;">
+    <form action="/index.html">
+        <h3>Sign in</h3>
+        <p>Enter Your account details or use QR Code</p>
+
+        <label for="">Email</label>
+
+        <input type="email" class="inp1">
+
+        <label for="">Password</label>
+
+        <input type="password" class="inp1">
+
+        <div class="remberme">
+            <input type="checkbox">
+            <h4>Rember me</h4></input>
+            <h4 class="rp">Recover password</h4>
+        </div>
+        <button class="btn1">Sign in</button>
+        <div class="hrline">
+            <div class="line"></div>
+            <p  style="position: absolute; bottom: -25px; left:160px;background-color:aliceblue; z-index: 10; border-radius: 20px; padding: 0px 10px 0px 10px;">or</p>
+        </div>
+        <button class="btn2">Log in with QR Code</button>
+
+        <p>You don't have an Account?.<span style="font-weight: 900;">Create an account</span></p>
+
+    </form>
+</body>
+
+</html>
